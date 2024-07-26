@@ -1,0 +1,148 @@
+/*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+
+/*BODY------------------------*/
+body{
+    background-color: #023535;
+}
+
+/*HEADER----------------------*/
+.full-width-header{
+    width: 100%;
+    padding: 10px 0;
+    background-image: linear-gradient(to bottom, #008F8C, #015958);
+    color: white;
+    font-family: 'Share Tech';
+    font-size: 20px;
+    text-align: center;
+}
+
+/*NAV------------------------*/
+.menu{
+    background-color: #015958;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 5px;
+}
+
+/*LINKS DENTRO DO NAV-------*/
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 25px;
+    position: relative;
+}
+
+.menu a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color:#008F8C;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+/*MAIN--------------------------*/
+/*Centralizando conteudo ao meio*/
+.centered-content{
+    display: flex;            /*n ter espaco entre header e main*/
+    flex-direction: column;               /*deixa tudo em coluna*/
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;   
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.137); 
+    max-width: 60%;
+    height: 50%;    
+}
+
+/*Artigo dentro do main---------*/
+main > article{
+    /*Centralizando-------------*/
+    text-align: center;
+    max-width: 100%;
+    text-align:left;
+    margin-bottom: 30px;
+}
+ main > article > h1{
+    font-size: 25px;
+    font-family: "Share Tech";
+    color: #023535;
+ }
+ main > article > h2{
+    font-size: 25px;
+    font-family: "Share Tech";
+    color: #015958;
+    background-color: #066e6d34;
+ }
+ main > article > p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-indent: 30px;
+    line-height: 1em;
+    color: black;
+ }
+
+ /*Centralizando imagens--------*/
+ .imagens{
+    text-align: center;
+ }
+
+ .video{
+    text-align: center;
+ }
+
+
+ /*ASIDE------------------------*/
+ .saibamais{
+    font-size: 25px;
+    font-family: "Share Tech";
+    color: #015958;
+    background-color: #066e6d34;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+ }
+ .saibamais > h2{
+    background-color:#015958;
+    color: white;
+    border-radius: 8px;
+ }
+ .saibamais > p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: large;
+    margin: 4px;
+}
+ /*Criando as colunas-----------*/
+ .list-outros{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #015958;
+    font-size: large;
+    display: flex;
+    gap:99px;
+}
+.coluna{
+    display: flex;
+    padding: 10px;
+}
+li {
+    padding: 5px 0;
+}
+
+footer{
+    width: 100%;
+    padding: 5px 0;
+    background-color:#015958;
+    color: white;
+    font-family: 'Share Tech';
+    font-size: 15px;
+    text-align: center;
+}

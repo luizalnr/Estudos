@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicamento em Promoção</title>
+    <script>
+        function calcularPromocao() {
+            // Lê a descrição do medicamento
+            const descricao = document.getElementById("descricao").value;
+
+            // Lê o preço do medicamento
+            const preco = parseFloat(document.getElementById("preco").value);
+
+            // Calcula o valor total da compra de duas unidades
+            const valorTotal = 2 * preco;
+
+            // Calcula o valor promocional subtraindo os centavos
+            const valorPromocional = valorTotal - (valorTotal % 1);
+
+            // Exibe o resultado
+            document.getElementById("resultado").innerText = `
+                Descrição do medicamento: ${descricao}
+                Preço do medicamento: R$ ${preco.toFixed(2)}
+                Valor promocional para duas unidades: R$ ${valorPromocional.toFixed(2)}
+            `;
+        }
+    </script>
+</head>
+<body>
+    <h1>Promoção de Medicamento</h1>
+    <label for="descricao">Descrição do medicamento:</label>
+    <input type="text" id="descricao" required><br><br>
+
+    <label for="preco">Preço do medicamento (R$):</label>
+    <input type="number" id="preco" step="0.01" required><br><br>
+
+    <button onclick="calcularPromocao()">Calcular Promoção</button>
+
+    <h2>Resultado</h2>
+    <p id="resultado"></p>
+</body>
+</html>

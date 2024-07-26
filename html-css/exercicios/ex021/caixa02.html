@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags Semanticas</title>
+
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aliceblue;
+        }
+
+        header{
+            background-color:hotpink;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        nav{
+            background-color:whitesmoke;
+            padding: 5px;
+            color: white;
+        }
+        
+        nav > a {
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            box-shadow: 1px 1px 1px black;
+        }
+
+        main{
+            background-color: blueviolet;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: white;
+            padding: 20px;
+        }
+
+        footer{
+            background-color:black;
+            color: aliceblue;
+            margin: 10px;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        
+        div#bola{
+            height: 100px;
+            width: 100;
+            background-color: aqua;
+            margin: 10px;
+             border-radius: 100px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site legal</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Link 01</a>
+                <li><a href="#">Link 02</a>
+                <li><a href="#">Link 03</a>
+                <li><a href="#">Link 04</a>
+                <li><a href="#">Link 05</a>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <aside>
+                    <h2>Artigo sobre blablabla</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt sequi tempore dolores similique ullam doloremque ea eveniet, quae reiciendis cupiditate illo ab? Quia assumenda, dignissimos neque nemo possimus suscipit.
+                    </p>
+                    Artigo escrito por mim
+                </aside>
+            </article>
+            <article>
+                <aside>
+                    <h2>Segundo artigo legal</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum possimus saepe esse repudiandae magnam atque, quas repellat reprehenderit expedita, eaque fuga, praesentium amet fugit ratione aspernatur quasi autem laboriosam impedit.
+                    </p>
+                    Artigo escrito por sla quem
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por CursoemVideo</p>
+
+
+    </footer>
+
+    <div id="bola"></div>
+</body>
+</html>
